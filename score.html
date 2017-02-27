@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        html{
+            width: 97%;
+            height: 95%;
+            -webkit-touch-callout: none;/* iOSでリンクを長押しした際に表示されるポップアップメニューを消す*/
+            -webkit-user-select: none;  /*文字列や画像を選択してコピー出来なくする（アプリっぽくするため!）*/
+            background-color: rgba(255,200,120,1.0);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 150%;
+            text-align: center;
+        font-family: "Hiragino Sans","ヒラギノ角ゴシック";
+        }
+        #score{
+            margin:170px 0px 80px 0px;
+            font-size: 150%;
+        }
+    </style>
+    
+    <script>
+        //最初に発火
+    window.onload = function () {
+        var score = sessionStorage.getItem("score");
+        var high_score = localStorage.getItem("high_score");
+        //　ハイスコア更新
+        if(score > high_score || high_score == null || high_score == "undefined" ){
+            localStorage.setItem("high_score", score);
+            high_score = score;
+        }
+        document.getElementById("score").innerHTML="SCORE:"+score;
+        document.getElementById("high_score").innerHTML="HIGH_SCORE:"+high_score;
+    }
+    </script>
+</head>
+<body>
+    <p id="score" class="score"></p>
+    <p id="high_score" class="high_score"></p>
+    <br>
+    <a href="index.html"><img src="./play_again.png" id="again_img" class="again_img" style="width:75%;"></a>
+       
+</body>
+</html>
