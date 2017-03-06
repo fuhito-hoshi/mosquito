@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html id="ura" class="ura">
     <head>
-		<meta charset="utf-8">
-		<title>‰á</title>
+	<meta charset="utf-8">
+	<title>èšŠ</title>
 
 		<style type="text/css">
 			html{
 				width: 97%;
 				height: 95%;
-				-webkit-touch-callout: none;/* iOS‚ÅƒŠƒ“ƒN‚ğ’·‰Ÿ‚µ‚µ‚½Û‚É•\¦‚³‚ê‚éƒ|ƒbƒvƒAƒbƒvƒƒjƒ…[‚ğÁ‚·*/
-				-webkit-user-select: none;  /*•¶š—ñ‚â‰æ‘œ‚ğ‘I‘ğ‚µ‚ÄƒRƒs[o—ˆ‚È‚­‚·‚éiƒAƒvƒŠ‚Á‚Û‚­‚·‚é‚½‚ß!j*/
-				font-family: "Hiragino Sans","ƒqƒ‰ƒMƒmŠpƒSƒVƒbƒN";
+				-webkit-touch-callout: none;/* iOSã§ãƒªãƒ³ã‚¯ã‚’é•·æŠ¼ã—ã—ãŸéš›ã«è¡¨ç¤ºã•ã‚Œã‚‹ãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’æ¶ˆã™*/
+				-webkit-user-select: none;  /*æ–‡å­—åˆ—ã‚„ç”»åƒã‚’é¸æŠã—ã¦ã‚³ãƒ”ãƒ¼å‡ºæ¥ãªãã™ã‚‹ï¼ˆã‚¢ãƒ—ãƒªã£ã½ãã™ã‚‹ãŸã‚!ï¼‰*/
+				font-family: "Hiragino Sans","ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ã‚·ãƒƒã‚¯";
 			}
 			#pic{
 					position: absolute;
@@ -21,33 +21,33 @@
 				font-weight: 700;
 				font-size: 900%;
 			}
-		</style><!-- css‚±‚±‚Ü‚Å@-->
+		</style><!-- cssã“ã“ã¾ã§ã€€-->
 
-		<script type="text/javascript" src="jquery-1.6.1.min.js"></script><!-- jquery“Ç‚İ‚İ -->
+		<script type="text/javascript" src="jquery-1.6.1.min.js"></script><!-- jqueryèª­ã¿è¾¼ã¿ -->
 		<script type="text/javascript">
 
-			var ready = 3;//Å‰‚ÌƒJƒEƒ“ƒgƒ_ƒEƒ“
-			var time;	//ƒ^ƒCƒ}[‚h‚c—p
-			var roop =11;//ŒJ‚è•Ô‚µ•p“x
-			var x =Math.floor( Math.random() * 60)+20;	//‚˜À•W
-			var y =Math.floor( Math.random() * 60)+20;	//‚™À•W
-			var ms =30;    //Å‘¬ƒXƒs[ƒhix‚Æy‚ğ‘«‚µ‚½j
-			var us =15;    //Å’xƒXƒs[ƒhix‚Æy‚ğ‘«‚µ‚½j
-			var s =ms;    //ƒXƒs[ƒhix‚Æy‚ğ‘«‚µ‚½j
-			var xs =Math.floor( Math.random() * s);    //x‚ÌƒXƒs[ƒh
-			var xf =Math.floor( Math.random() * 2 );   //x‚Ì•ûŒü
-			var yf =Math.floor( Math.random() * 2 );   //y‚Ì•ûŒü
-			var flg=0;    //“ñd‹N“®–h~ƒtƒ‰ƒO
-			var hane=0; //‰H‚Ìƒtƒ‰ƒO
-			var msg; //ƒƒbƒZ[ƒW
+			var ready = 3;//æœ€åˆã®ã‚«ã‚¦ãƒ³ãƒˆãƒ€ã‚¦ãƒ³
+			var time;	//ã‚¿ã‚¤ãƒãƒ¼ï¼©ï¼¤ç”¨
+			var roop =11;//ç¹°ã‚Šè¿”ã—é »åº¦
+			var x =Math.floor( Math.random() * 60)+20;	//ï½˜åº§æ¨™
+			var y =Math.floor( Math.random() * 60)+20;	//ï½™åº§æ¨™
+			var ms =30;    //æœ€é€Ÿã‚¹ãƒ”ãƒ¼ãƒ‰ï¼ˆxã¨yã‚’è¶³ã—ãŸï¼‰
+			var us =15;    //æœ€é…ã‚¹ãƒ”ãƒ¼ãƒ‰ï¼ˆxã¨yã‚’è¶³ã—ãŸï¼‰
+			var s =ms;    //ã‚¹ãƒ”ãƒ¼ãƒ‰ï¼ˆxã¨yã‚’è¶³ã—ãŸï¼‰
+			var xs =Math.floor( Math.random() * s);    //xã®ã‚¹ãƒ”ãƒ¼ãƒ‰
+			var xf =Math.floor( Math.random() * 2 );   //xã®æ–¹å‘
+			var yf =Math.floor( Math.random() * 2 );   //yã®æ–¹å‘
+			var flg=0;    //äºŒé‡èµ·å‹•é˜²æ­¢ãƒ•ãƒ©ã‚°
+			var hane=0; //ç¾½ã®ãƒ•ãƒ©ã‚°
+			var msg; //ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 			var point = 77777;
 
-			//Å‰‚É”­‰Î
+			//æœ€åˆã«ç™ºç«
 			window.onload = function () {
-				$('#pic').bind('touchstart', function() {stopImg();});//‰æ‘œ‚ªƒ^ƒbƒv‚³‚ê‚é‚Æ~‚Ü‚é
-				$('#ura').bind('touchstart', function() {karaburi();});//‹óU‚è‚µ‚½‚Æ‚«‚É”½‰
+				$('#pic').bind('touchstart', function() {stopImg();});//ç”»åƒãŒã‚¿ãƒƒãƒ—ã•ã‚Œã‚‹ã¨æ­¢ã¾ã‚‹
+				$('#ura').bind('touchstart', function() {karaburi();});//ç©ºæŒ¯ã‚Šã—ãŸã¨ãã«åå¿œ
 
-				//ƒXƒ^[ƒgƒ{ƒ^ƒ“
+				//ã‚¹ã‚¿ãƒ¼ãƒˆãƒœã‚¿ãƒ³
 				$('#start_img').bind('touchstart', function() {
 					document.getElementById("pic").style.left = x + "%";
 					document.getElementById("pic").style.top = y + "%";
@@ -57,37 +57,37 @@
 				});
 			}
 
-			//‰æ‘œ‚Ì“®‚«
+			//ç”»åƒã®å‹•ã
 			function moveImg() {
 				if(flg==1){
-					return;@//flg‚ª1‚È‚ç‚ÎAˆ—‚ğ’†’f
+					return;ã€€//flgãŒ1ãªã‚‰ã°ã€å‡¦ç†ã‚’ä¸­æ–­
 				}else{
-					flg=1;@//flg‚ªƒ[ƒ‚È‚ç‚ÎAflg‚É‚P‚ğ‘ã“ü‚µ‚Äˆ—‚ğŒp‘±
+					flg=1;ã€€//flgãŒã‚¼ãƒ­ãªã‚‰ã°ã€flgã«ï¼‘ã‚’ä»£å…¥ã—ã¦å‡¦ç†ã‚’ç¶™ç¶š
 					point = 77777;
 				}
 
-				//‰á‚Ì“®‚«‚ÌŒJ‚è•Ô‚µˆ—
+				//èšŠã®å‹•ãã®ç¹°ã‚Šè¿”ã—å‡¦ç†
 				time = setInterval(function(){
-					if(s >= ms){s -= 1;}         //‘¬‚·‚¬‚½‚ç‘¬“x‚ğ—‚Æ‚·
-					else if(s <= (us)){s += 7;}//’x‚·‚¬‚½‚ç‘¬“x‚ğã‚°‚é
-					else{s += (Math.floor( Math.random() * 3 )-1);}//‘¬“x‚ğ•Ï‚¦‚é
-					if(xs <= 1){xf =Math.floor( Math.random() * 2 ); xs = 3;}     //x‚ÌƒXƒs[ƒh‚ª’x‚·‚¬‚½‚ç•ûŒü‚ğƒ‰ƒ“ƒ_ƒ€‚É‚µ‘¬“x‚ğ3‚É‚·‚é
-					if(xs >= s-1){yf =Math.floor( Math.random() * 2 ); xs = s-3;} //y‚ÌƒXƒs[ƒh‚ª’x‚·‚¬‚½‚ç•ûŒü‚ğƒ‰ƒ“ƒ_ƒ€‚É‚µ‘¬“x‚ğ3‚É‚·‚é
-					xs += (Math.floor( Math.random()*5)-2); //xƒXƒs[ƒh‚ğ•Ï‚¦‚é
+					if(s >= ms){s -= 1;}         //é€Ÿã™ããŸã‚‰é€Ÿåº¦ã‚’è½ã¨ã™
+					else if(s <= (us)){s += 7;}//é…ã™ããŸã‚‰é€Ÿåº¦ã‚’ä¸Šã’ã‚‹
+					else{s += (Math.floor( Math.random() * 3 )-1);}//é€Ÿåº¦ã‚’å¤‰ãˆã‚‹
+					if(xs <= 1){xf =Math.floor( Math.random() * 2 ); xs = 3;}     //xã®ã‚¹ãƒ”ãƒ¼ãƒ‰ãŒé…ã™ããŸã‚‰æ–¹å‘ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«ã—é€Ÿåº¦ã‚’3ã«ã™ã‚‹
+					if(xs >= s-1){yf =Math.floor( Math.random() * 2 ); xs = s-3;} //yã®ã‚¹ãƒ”ãƒ¼ãƒ‰ãŒé…ã™ããŸã‚‰æ–¹å‘ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«ã—é€Ÿåº¦ã‚’3ã«ã™ã‚‹
+					xs += (Math.floor( Math.random()*5)-2); //xã‚¹ãƒ”ãƒ¼ãƒ‰ã‚’å¤‰ãˆã‚‹
 
-					//‘¬“x‚Ì”ä—¦‚ğ‡‚í‚¹‚é
+					//é€Ÿåº¦ã®æ¯”ç‡ã‚’åˆã‚ã›ã‚‹
 					if(xf == 0){x += (xs/5);}
 					else{x -= (xs/5);}
 					if(yf == 0){y += ((s-xs)/9);}
 					else{y -= ((s-xs)/9);}
 
-					//’[‚É—ˆ‚½‚ç‹t•ûŒü‚Ö«
+					//ç«¯ã«æ¥ãŸã‚‰é€†æ–¹å‘ã¸â†“
 					if(x <= 1){xf = 0;}
 					if(y <= 10){yf = 0;}
 					if(x >= 82){xf = 1;}
 					if(y >= 90){yf = 1;}
 
-					//•Ï”‚Ì’l‚ğˆÊ’u‚É”½‰f«
+					//å¤‰æ•°ã®å€¤ã‚’ä½ç½®ã«åæ˜ â†“
 					document.getElementById("pic").style.left = x + "%";
 					document.getElementById("pic").style.top = y + "%";
 					if(hane==0){
@@ -95,50 +95,50 @@
 					}else{
 						hane = 0; document.getElementById("pic").src = "ka02.png";
 					}
-					point -= 7; //“_”‚ªŒ¸‚Á‚Ä‚¢‚­
-					msg = point + "“_"; // •\¦•¶ì¬
-					document.getElementById("timer").innerHTML = msg; // •\¦XV
-				},roop); //ƒXƒs[ƒh(ŒJ‚è•Ô‚µ•p“x‚Ìİ’è)
-			}//‰æ‘œ‚Ì“®‚«‚±‚±‚Ü‚Å
+					point -= 7; //ç‚¹æ•°ãŒæ¸›ã£ã¦ã„ã
+					msg = point + "ç‚¹"; // è¡¨ç¤ºæ–‡ä½œæˆ
+					document.getElementById("timer").innerHTML = msg; // è¡¨ç¤ºæ›´æ–°
+				},roop); //ã‚¹ãƒ”ãƒ¼ãƒ‰(ç¹°ã‚Šè¿”ã—é »åº¦ã®è¨­å®š)
+			}//ç”»åƒã®å‹•ãã“ã“ã¾ã§
 
-			//‰æ‘œ‚ª~‚Ü‚Á‚½‚Ìˆ—
+			//ç”»åƒãŒæ­¢ã¾ã£ãŸæ™‚ã®å‡¦ç†
 			function stopImg() {
-				clearInterval(time);//ƒ^ƒCƒ}[ˆ—‚ğ‰ğœ
-				flg=0;//ŒJ‚è•Ô‚µ–h~flg‚Éƒ[ƒ‚ğ‘ã“ü
-				document.getElementById("pic").src = "ka03.png";//€‚ñ‚¾‚Æ‚«‚Ì‰æ‘œ
-				sessionStorage.setItem("score", point);     //ƒ[ƒJƒ‹ƒXƒgƒŒ[ƒW‚ÉƒXƒRƒA‚ğ•Û‘¶
-				setTimeout(function(){ window.location.href = "score.html"; }, 900); //Œ‹‰Ê‰æ–Ê‚Ö‘JˆÚ
+				clearInterval(time);//ã‚¿ã‚¤ãƒãƒ¼å‡¦ç†ã‚’è§£é™¤
+				flg=0;//ç¹°ã‚Šè¿”ã—é˜²æ­¢flgã«ã‚¼ãƒ­ã‚’ä»£å…¥
+				document.getElementById("pic").src = "ka03.png";//æ­»ã‚“ã ã¨ãã®ç”»åƒ
+				sessionStorage.setItem("score", point);     //ãƒ­ãƒ¼ã‚«ãƒ«ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã«ã‚¹ã‚³ã‚¢ã‚’ä¿å­˜
+				setTimeout(function(){ window.location.href = "score.html"; }, 900); //çµæœç”»é¢ã¸é·ç§»
 			}
 
-			//‹óU‚è‚µ‚½‚Ìˆ—
+			//ç©ºæŒ¯ã‚Šã—ãŸæ™‚ã®å‡¦ç†
 			function karaburi(){
 				if(flg==1){
-					point -= 1000; //“_”‚ªŒ¸‚Á‚Ä‚¢‚­
-					msg = point + "“_"; // •\¦•¶ì¬
-					document.getElementById("timer").innerHTML = msg; // •\¦XV
+					point -= 1000; //ç‚¹æ•°ãŒæ¸›ã£ã¦ã„ã
+					msg = point + "ç‚¹"; // è¡¨ç¤ºæ–‡ä½œæˆ
+					document.getElementById("timer").innerHTML = msg; // è¡¨ç¤ºæ›´æ–°
 				}
 			}
 
-			function count(v){//ƒXƒ^[ƒg‘O‚ÌƒJƒEƒ“ƒg
+			function count(v){//ã‚¹ã‚¿ãƒ¼ãƒˆå‰ã®ã‚«ã‚¦ãƒ³ãƒˆ
 				var id = setInterval(function(){
 					v--;
 					document.getElementById("counter").innerHTML=v;
 					if(v <= 0){
 						document.getElementById("start").style.display="none";
 						moveImg();
-						clearInterval(id); //id‚ğclearInterval‚Åw’è‚µ‚Ä‚¢‚é
+						clearInterval(id); //idã‚’clearIntervalã§æŒ‡å®šã—ã¦ã„ã‚‹
 					}
 				}, 1000);
 			}
-		</script><!-- javascript‚±‚±‚Ü‚Å@-->
+		</script><!-- javascriptã“ã“ã¾ã§ã€€-->
 	</head>
 	<body>
 
 		<img src="ka01.png" id="pic" class="pic" width="15%"><br>
-		<p id="timer">77777“_</p>
+		<p id="timer">77777ç‚¹</p>
 
 		<div align="center" id="start" class="start" style="position:absolute; left:0px; top:0px; width:100%; height:100%;">
-			<p id="counter" class="counter">‰á</p>
+			<p id="counter" class="counter">èšŠ</p>
 			<img src="./play_start.png" id="start_img" class="start_img" style="position:absolute; left:13%; top:65%; width:76%;">
 		</div>
 	</body>
